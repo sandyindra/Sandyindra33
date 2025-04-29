@@ -1,0 +1,270 @@
+body{
+    background-color: rgba(0, 0, 0, 0.959);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#head{
+    animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#head{
+    padding: 20px;
+    align-items: center;
+    color: aliceblue;
+    justify-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.kepala-gambar{
+    width: 125px;
+    height: 125px;
+    margin: 0 30px;
+    display: flex;
+}
+.kepalatengah{
+    text-align: center;
+    flex-grow: 1;
+}
+.kepala-gambar img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+#menu{
+    clear: both;
+    overflow: hidden;
+    background-color: rgba(0, 1, 2, 0.594);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px bisque;
+    position: sticky;
+}
+#menu a{ 
+    float:right;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: rgb(238, 214, 214);
+    text-align: center;
+    padding: 10px 1px 10px 1px;
+    text-decoration: none;
+    margin-right: 13%;
+    transition: color 0.3s ease;
+    position: relative;
+    text-shadow: 
+     0 0 10px rgb(248, 238, 238),
+     0 0 20px rgb(250, 250, 250),
+     0 0 40px rgb(255, 255, 255);
+     opacity: 90%;
+}
+#menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(241, 240, 240);
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+#menu a:hover::after {
+    width: 100%;
+}
+#menu a:hover{
+
+    color: rgb(236, 223, 223);
+}
+#menu {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#isi{
+    text-align: justify;
+    color: rgb(252, 234, 234);
+    background-color: rgba(0, 1, 2, 0.594);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px bisque;
+    padding: 0 10px 10px 10px;
+    animation: fadeIn 0.8s ease-in;
+    display: flex;
+
+}
+.isikiri, .isikanan {
+    flex: 1; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 3px bisque;
+    background-color: rgba(0, 1, 2, 0.594);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    #footer{
+        background-color:  rgba(0, 1, 2, 0.594);
+        color: rgb(252, 234, 234);;
+        text-align: center;
+        padding: 20px 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 3px bisque;
+    }
+    
+    .footer-container {
+        animation: fadeInUp 1s ease;
+    }
+    
+    .footer-container p {
+        margin: 5px 0;
+        font-size: 14px;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+    }
+    
+    .footer-container p:hover {
+        opacity: 1;
+        color: rgb(252, 234, 234);
+    }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#footer{
+    animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.bawah {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 1, 2, 0.594);
+     color: rgb(252, 234, 234);;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+        box-shadow: 3px 3px 5px 3px bisque;
+  }
+  .bawah a{
+    display: flex;
+    gap: 50px;
+    color: rgb(238, 214, 214);
+    padding: 10px 1px 10px 1px;
+    text-decoration: none;
+    margin-right: 13%;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  .bawah a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+  }
+  
+  .bawah a:hover::after {
+    width: 100%;
+  }
+  
+  .bawah a:hover {
+    color: #fff;
+  }
+  .bawah{
+    animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  .bawah  {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .kiri, .bawahtengah, .kanan {
+    color: rgb(252, 234, 234);;
+    padding: 15px;
+   border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .bawah h3 {
+    margin-top: 0;
+    color: #fffafa;
+  }
+  h1{
+    text-align: center;
+    color: #fffdfd;
+    text-shadow: 
+     0 0 10px rgb(248, 238, 238),
+     0 0 20px rgb(250, 250, 250),
+     0 0 40px rgb(255, 255, 255);
+     opacity: 90%;
+     animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @media (max-width: 768px) {
+    .bawah {
+      flex-direction: column;
+    }
+  }

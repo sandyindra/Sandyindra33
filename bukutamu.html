@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div id="head">
+            <div class="kepala-gambar kiri" >
+              <img src="gmbr/logo.png" alt="kiri" width="100px" height="100px">
+            </div>
+            <div class="kepalatengah">
+            <h1 >Welcome To</h1>
+            <h1 >Desain Komunikasi Visual</h1>
+        </div>
+        <div class="kepala-gambar kanan" align="center">
+            <img src="gmbr/dkv.jpeg" alt="kanan" width="100px" height="100px">
+        </div>
+        </div>
+        <div id="menu">
+            <a href="bukutamu.html">Buku Tamu</a>
+            <a href="album.html">Album</a>
+            <a href="prestasi.html">Prestasi</a>
+            <a href="profiljurusan.html">Profil Jurusan</a>
+            <a href="index.html">Beranda</a>
+        </div>
+        <div class="isi">
+            <form id="guestForm">
+                <h2 align="center">Buku Tamu</h2>
+                <input type="text" id="name" placeholder="Nama" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <input type="datetime-local" id="Waktu"  placeholder="Waktu" required>
+                <textarea id="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+                <div id="output"></div>
+              </form>
+            </div>
+          <script>
+            document.getElementById('guestForm').addEventListener('submit', function(e) {
+              e.preventDefault();
+              const nama = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const waktu=document.getElementById('Waktu').value;
+              const pesan = document.getElementById('message').value;
+              const output = `
+                <b>Nama:</b> ${nama}<br>
+                <b>Email:</b> ${email}<br>
+                <b>Waktu:</b> ${waktu}<br>
+                <b>Pesan:</b> ${pesan}<br>
+              `;
+              document.getElementById('output').innerHTML = output;
+              document.getElementById('output').style.display = 'block';
+          
+              this.reset();
+            });
+          </script>
+            </div>
+        </div>
+        </div>
+        <div class="bawah">
+            <div class="bawah-i kiri">
+             <h3>SMKN 2 Yogyakarta</h3>
+             <p>Jl. AM. Sangaji 47 Yogyakarta</p>
+                <p>Cokrodiningratan, Jetis, Yogyakarta</p>
+                <p>(0274) 513490 / (0274) 512639</p>
+                <p>info@smk2-yk.sch.id</p>
+            </div>
+            <div class="bawahtengah">
+             <h3>Media Sosial</h3>
+             <a href="https://www.facebook.com/SMK2YK/">Facebook</a>
+             <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsmkn2yogyakarta">Twitter</a>
+             <a href="https://www.youtube.com/channel/UC-XjCCMZosDiXzBEKiS6FBA/videos">Youtube</a>
+             <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsmkn2yogyakarta%2F&is_from_rle">Instagram</a>
+             <a href="https://www.tiktok.com/@smk2yogyakarta">Tiktok</a>
+            </div>
+            <div class="bawah-1 kanan">
+                <h3>Maps SMKN2Yogyakarta</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7906.240485150367!2d110.367391!3d-7.777073000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58373fffffff%3A0xa4ec1ca156555926!2sSMK%20Negeri%202%20Yogyakarta!5e0!3m2!1sen!2sid!4v1745379012252!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <p>© 2025 Desain Komunikasi Visual - SMK Negeri 2 Yogyakarta</p>
+                <p>Made  by Sendy</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
